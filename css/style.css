@@ -136,7 +136,7 @@ body {
     font-size: 18px;
   }
 }
-.header__navs a.active, .header__navs a:hover {
+.header__navs a:hover, .header__navs a:focus, .header__navs a:active {
   border-color: #1CF508;
   color: #1CF508;
 }
@@ -596,7 +596,7 @@ body {
 }
 .robot__left h2 {
   color: #441190;
-  font-size: 88px;
+  font-size: 60px;
   text-transform: uppercase;
   margin-bottom: 80px;
   position: relative;

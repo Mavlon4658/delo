@@ -61,16 +61,28 @@ homeSwiper.on('slideChange', function (e) {
 
 let bars = document.querySelector('header .bars');
 let mobileMenu = document.querySelector('.mobile_menu');
+let menuLink = document.querySelectorAll('.mobile_menu li a');
 
 bars.onclick = () => {
     mobileMenu.classList.toggle('active');
     bars.classList.toggle('active');
 }
 
-let showMore = document.querySelector('.robot .show_more')
-let description = document.querySelector('.robot__left p');
+menuLink.forEach(el => {
+    el.onclick = () => {
+        mobileMenu.classList.remove('active');
+        bars.classList.remove('active');
+    }
+})
 
-showMore.onclick = () => {
-    description.classList.add('active');
-    showMore.classList.add('hidden')
-}
+let section = document.querySelectorAll('.robot');
+
+section.forEach(el => {
+    let showMore = el.querySelector('.robot .show_more')
+    let description = el.querySelector('.robot__left p');
+    
+    showMore.onclick = () => {
+        description.classList.add('active');
+        showMore.classList.add('hidden')
+    }
+})

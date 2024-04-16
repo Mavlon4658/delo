@@ -148,7 +148,7 @@ body {
                 font-size: 18px;
             }
 
-            &.active, &:hover {
+            &:hover, &:focus, &:active,   {
                 border-color: #1CF508;
                 color: #1CF508;
             }
@@ -633,7 +633,7 @@ body {
     &__left {
         h2 {
             color: #441190;
-            font-size: 88px;
+            font-size: 60px;
             text-transform: uppercase;
             margin-bottom: 80px;
             position: relative;

@@ -488,11 +488,11 @@ body {
 }
 
 .robot {
-  padding: 105px 0 187px;
+  padding: 165px 0 187px;
 }
 @media screen and (max-width: 630px) {
   .robot {
-    padding: 48px 0 147px;
+    padding: 88px 0 100px;
   }
 }
 .robot__container {
